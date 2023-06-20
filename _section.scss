@@ -24,7 +24,7 @@ section{
     div:nth-child(1){
         position: absolute;
     .pseudo{
-        transition: 0.3s;
+        transition: 0.5s;
         position: relative;
     background: rgb(238, 238, 238);
     width: 20px;
@@ -32,7 +32,7 @@ section{
     border-radius: 20px;
     padding: 5px ;
         .pseudo2{
-        transition: 0.3s;
+        transition: 0.5s;
             background: rgb(255, 255, 255);
             width: 20px;
             position: absolute;
