@@ -1,0 +1,150 @@
+section {
+  position: relative;
+  background: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  margin: 200px auto 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+}
+section div:nth-child(1) {
+  position: absolute;
+}
+section div:nth-child(1) .pseudo {
+  transition: 0.3s;
+  position: relative;
+  background: rgb(238, 238, 238);
+  width: 20px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 5px;
+}
+section div:nth-child(1) .pseudo .pseudo2 {
+  transition: 0.3s;
+  background: rgb(255, 255, 255);
+  width: 20px;
+  position: absolute;
+  height: 20px;
+  border-radius: 10px;
+  left: 5px;
+  cursor: pointer;
+}
+section .img {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+section .img img {
+  width: 150px;
+  background: rgb(0, 117, 255);
+  border-radius: 50%;
+}
+section .texts {
+  text-align: center;
+  padding: 20px 0;
+}
+section .texts h3 {
+  padding: 0 0 10px;
+}
+section .icon {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+section .icon img {
+  width: 45px;
+}
+section .icon i:not(:last-child) {
+  padding: 0 15px 0 0;
+}
+section .icon i:nth-child(1) {
+  color: orange;
+}
+section .icon i:nth-child(2) {
+  color: blue;
+}
+section .icon i:nth-child(3) {
+  color: pink;
+}
+section .icon i {
+  font-size: 40px;
+}
+section .but {
+  text-align: center;
+  padding: 20px 0 0;
+}
+section .but a {
+  background: #0075ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+section .icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0 0;
+}
+section .icons a:nth-child(1) > i {
+  color: #0075ff;
+}
+section .icons a:nth-child(2) > i {
+  color: orange;
+}
+section .icons a:nth-child(3) > i {
+  color: red;
+}
+section .icons i {
+  font-size: 30px;
+}
+
+header {
+  position: relative;
+  background: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  margin: 200px auto 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+}
+header form {
+  text-align: center;
+}
+header form textarea:not(:-moz-placeholder-shown) + button {
+  background-color: #0075ff;
+  cursor: pointer;
+}
+header form textarea:not(:placeholder-shown) + button {
+  background-color: #0075ff;
+  cursor: pointer;
+}
+header form textarea {
+  resize: none;
+  display: block;
+  width: 345px;
+  height: 146px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0 0;
+  border-radius: 10px;
+}
+header form input[type=email] {
+  display: block;
+  width: 97%;
+  margin: 10px 0px;
+}
+header form input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+}
+header form button {
+  background: #eee;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0 0;
+  cursor: not-allowed;
+}

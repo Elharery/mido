@@ -1,0 +1,157 @@
+$mainColor: #0075ff;
+$eColor: #eee;
+$fColor: #fff;
+$orange: orange;
+$blue: blue;
+$red: red;
+$yellow: yellow;
+$pink: pink;
+$borderR : 10px ;
+@mixin flex{
+    display: flex;
+}
+@mixin align{
+    align-items: center;
+}
+section{
+    position: relative;
+    background: $fColor;
+    width: fit-content;
+    border-radius: $borderR;
+    margin: 200px auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+    div:nth-child(1){
+        position: absolute;
+    .pseudo{
+        transition: 0.3s;
+        position: relative;
+    background: rgb(238, 238, 238);
+    width: 20px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 5px ;
+        .pseudo2{
+        transition: 0.3s;
+            background: rgb(255, 255, 255);
+            width: 20px;
+            position: absolute;
+            height: 20px;
+            border-radius: 10px;
+            left: 5px;
+            cursor: pointer;
+        
+    }
+}}
+    .img{
+        width: fit-content;
+        margin: auto;
+        img{
+            width: 150px;
+            background: rgb(0, 117, 255);
+            border-radius: 50%;
+        }
+    }
+    .texts{
+        text-align: center;
+        padding: 20px 0;
+        h3{
+            padding: 0 0 10px;
+        }
+    }
+    .icon{
+        @include flex;
+        @include align;
+        padding: 15px;
+        img{
+            width: 45px;
+        }
+        i:not(:last-child){
+            padding: 0 15px 0 0;
+        }
+        i:nth-child(1){
+            color: $orange;
+        }
+        i:nth-child(2){
+            color: $blue;
+        }
+        i:nth-child(3){
+            color: $pink;
+        }
+        i{
+            font-size: 40px;
+        }
+    }
+    .but{
+        text-align: center;
+        padding: 20px 0 0;
+        a{
+            background: $mainColor;
+            color: $fColor;
+            padding: 10px;
+            border-radius: $borderR;
+        }
+    }
+    .icons{
+        @include flex;
+        justify-content: space-evenly;
+        padding: 40px 0 0;
+        a:nth-child(1) > i{
+            color: $mainColor;
+        }
+        a:nth-child(2) > i{
+            color: $orange;
+        }
+        a:nth-child(3) > i{
+            color: $red;
+        }
+        i{
+            font-size: 30px;
+        }
+    }
+}
+header{
+    position: relative;
+    background: $fColor;
+    width: fit-content;
+    border-radius: $borderR;
+    margin: 200px auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+    form{
+        text-align: center;
+        textarea:not(:placeholder-shown) + button{
+            background-color: $mainColor;
+            cursor: pointer;
+        }
+        textarea{
+            resize: none;
+            display: block;
+            width: 345px;
+            height: 146px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0 0;
+            border-radius: $borderR;
+        }
+        input[type="email"]{
+            display: block;
+            width: 97%;
+            margin: 10px 0px;
+        }
+        input{
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: $borderR;
+        }
+        button{
+            background: $eColor;
+            padding: 10px;
+            color: #fff;
+            border-radius: 10px;
+            width: 100%;
+            margin: 10px 0 0;
+            cursor: not-allowed;
+        }
+    }
+}
