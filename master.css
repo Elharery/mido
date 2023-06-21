@@ -12,7 +12,6 @@ section div:nth-child(1) {
   position: absolute;
 }
 section div:nth-child(1) .pseudo {
-  transition: 0.3s;
   position: relative;
   background: rgb(238, 238, 238);
   width: 20px;
@@ -147,4 +146,10 @@ header form button {
   width: 100%;
   margin: 10px 0 0;
   cursor: not-allowed;
+}
+
+@media (max-width:767px) {
+  .big {
+    flex-direction: column-reverse;
+  }
 }

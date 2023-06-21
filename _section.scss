@@ -7,12 +7,32 @@ $red: red;
 $yellow: yellow;
 $pink: pink;
 $borderR : 10px ;
+$med-ph : "max-width:767px";
 @mixin flex{
     display: flex;
 }
 @mixin align{
     align-items: center;
 }
+@mixin j-c{
+    justify-content: center;
+}
+// div.big{
+//     @include flex;
+//     @include align;
+//     @include j-c;
+//     div.sideCard{
+//         width: 250px;
+//         background: #fff;
+//     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+//     height: 452.78px;
+//     border-radius: $borderR;
+//     form{
+//     border-radius: $borderR;
+//     background-color: #ccc;
+//     padding: 15px;
+// }
+// }
 section{
     position: relative;
     background: $fColor;
@@ -23,26 +43,25 @@ section{
     padding: 10px ;
     div:nth-child(1){
         position: absolute;
-    .pseudo{
-        transition: 0.5s;
-        position: relative;
-    background: rgb(238, 238, 238);
-    width: 20px;
-    height: 50px;
-    border-radius: 20px;
-    padding: 5px ;
-        .pseudo2{
-        transition: 0.5s;
-            background: rgb(255, 255, 255);
+        .pseudo{
+            position: relative;
+            background: rgb(238, 238, 238);
             width: 20px;
-            position: absolute;
-            height: 20px;
+            height: 50px;
+            border-radius: 20px;
+            padding: 5px ;
+            .pseudo2{
+                transition: 0.3s;
+                background: rgb(255, 255, 255);
+                width: 20px;
+                position: absolute;
+                height: 20px;
             border-radius: 10px;
             left: 5px;
             cursor: pointer;
-        
-    }
-}}
+            
+        }
+    }}
     .img{
         width: fit-content;
         margin: auto;
@@ -155,3 +174,12 @@ header{
         }
     }
 }
+// }
+        @media ($med-ph){
+            .big{
+                flex-direction: column-reverse;
+            }
+            // section{
+            //     border: 1px solid #fff;
+            // }
+        }

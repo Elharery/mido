@@ -5,6 +5,7 @@ let section = document.querySelector("section");
 let texts = document.querySelector("section .texts");
 pseudo2.addEventListener('click', ()=>{
         if(pseudo2.style.top != "35px"){
+            section.style.border = "1px solid #fff ";
             pseudo2.style.top = "35px" ;
             pseudo.style.background = "#0075ff";
             body.style.background = "#000";
